@@ -1,0 +1,101 @@
+
+<html>
+    <head>
+        <meta charset="u=UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <meta name="author" content="Parshant Tyagi">
+        <meta name="description" content="library system">
+        <meta name="keyword" content="">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Library</title>
+        
+    </head>
+    <body>
+        <!-----------header of library system--------------->
+        <header>
+            <p>Library System</p>
+        </header>
+        <!----------ist form of library system--------------->
+        <div class="container">
+            <form action="#" name="myform" onsubmit="return false">
+                <div class="row">
+                    <div class="col-20"><lable>First Name: </lable></div>
+                    <div  class="col-40"><input id="fname" type="text" placeholder="input l_name" minlength="3" maxlength="10" pattern="\w*" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><lable>Last Name: </lable></div>
+                    <div class="col-40"><input id="lname" type="text" placeholder="input l_name" minlength="3" maxlength="10" pattern="\w*" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><lable>Email: </lable></div>
+                    <div class="col-40"><input  id="email" type="email" placeholder="abc@gmail.com" minlength="6" maxlength="120" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><lable>Phone no.: </lable></div>
+                    <div class="col-40"><input id="phnum" type="text" placeholder="+91-00000-00000"  pattern="[+91]{3}[0-9]{10}" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><lable>Address:</lable></div>
+                    <div class="col-40"><textarea id="address" placeholder="Enter your address"  minlength="5" maxlength="500" required></textarea></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><lable>Course: </lable></div>
+                    <div class="col-40">
+                        <select id="course" name="course" required>
+                            <option value="BCA">BCA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="BBA">BBA</option>
+                            <option value="MBA">MBA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Subjects:</label></div>
+                    <div class="col-40">
+                        <input type="checkbox" name="check" value="Java" required><label>Java</label>
+                        <input type="checkbox" name="check" value="CG" required><label>CG</label>
+                        <input type="checkbox" name="check" value="AI"><label>AI</label>
+                        <input type="checkbox" name="check" value="ACA"><label>ACA</label> 
+                        <input type="checkbox" name="check" value="CN"><label>CN</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><lable>Time Period:</lable></div>
+                    <div class="col-40">
+                        <select id="time" name="time" required>
+                            <option value="1 day">1 day</option>
+                            <option value="2 day">2 day</option>
+                            <option value="3 day">3 day</option>
+                            <option value="4 day">4 day</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Submission Detail:</label></div>
+                    <div class="col-40"><input id="date" type="date"  placeholder="dd/mm/yyyy" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-40"><button onclick="validate()">Submit</button></div>
+                </div>
+            </form>
+        </div> 
+        <!-------------second form of submitted information---------------------->
+        <div class="container1">  
+            <form>
+                <table id="submit_information">
+                    <tr><td style="background-color: gainsboro;"><b>Submitted Information</b></td></tr>
+                    <tr><td><b>Firstname:</b><span id="Sfname"></span></td></tr>
+                    <tr><td><b>Lastname:</b><span id="Slname"></span></td></tr>
+                    <tr><td><b>Email:</b><span id="Semail"></span></td></tr>
+                    <tr><td><b>Phone no:</b><span id="Sphnum"></span></td></tr>
+                    <tr><td><b>Address:</b><span id="Saddress"></span></td></tr>
+                    <tr><td><b>Course:</b><span id="Scourse"></span></td></tr>
+                    <tr><td><b>Selected Subject:</b><span id="Ssubject"></span></td></tr>
+                    <tr><td><b>Time Period:</b><span id="Stime"></span></td></tr>
+                    <tr><td><b>Submission date:</b><span id="Sdate"></span></td></tr>
+                </table>
+            </form>
+        </div>   
+        <script src="./js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+header{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.col-20 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-40 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+.container {
+    width: 50%;
+    float: left;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
+}
+input[type= text], select, textarea{
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email]{
+    width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=date]{
+    width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=checkbox]{
+    width:20px;
+    height: 20px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.container1{
+    width:40%;
+    float: right;
+    margin-top: 20px;
+
+}
+
+
+button{
+    width: 80%;
+    background-color: red;
+    border: 1 px solid red;
+    cursor: pointer;
+    padding: 10px;
+}
+#submit_information{
+    border-collapse: collapse;
+}
+#submit_information td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
